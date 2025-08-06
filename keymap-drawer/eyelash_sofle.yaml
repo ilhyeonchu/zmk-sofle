@@ -90,8 +90,8 @@ layers:
   - Sft+$
   - {t: '-', s: _}
   - {t: '=', s: +}
+  - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-tab$$
