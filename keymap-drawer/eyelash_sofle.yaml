@@ -57,12 +57,12 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - layer1
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '2'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: layer1}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '2'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: windownum, h: toggle}
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - PG DN
   - PG UP
   layer1:
@@ -82,8 +82,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - '"'
   - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Sft+^
@@ -93,7 +93,7 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -317,12 +317,12 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - LGUI
-  - layer1
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '2'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: layer1}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '2'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: macnum, h: toggle}
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - PgDn
   - PgUp
   macnum:
