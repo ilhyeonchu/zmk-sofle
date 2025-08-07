@@ -110,12 +110,12 @@ layers:
   - RGB ON
   - RGB EFF
   - RGB EFR
-  - RGB SPI
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - RGB BRI
-  - RGB BRD
-  - Ins
-  - F11
+  - $
+  - +
+  - (
+  - )
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
