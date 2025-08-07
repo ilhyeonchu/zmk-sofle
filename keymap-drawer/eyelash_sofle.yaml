@@ -107,13 +107,13 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
-  - RGB ON
-  - RGB EFF
-  - RGB EFR
-  - $$mdi:apple-keyboard-control$$
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - Sft+%
+  - Sft+^
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $
-  - +
+  - Sft+$
+  - Sft++
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: /, s: '?'}
