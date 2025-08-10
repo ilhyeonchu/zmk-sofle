@@ -128,7 +128,7 @@ layers:
   - {t: '`', s: '~'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $
   - Sft+)
   '2':
   - '~'
