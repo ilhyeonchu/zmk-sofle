@@ -81,7 +81,7 @@
 &kp LS(TILDE)  &kp N1          &kp N2        &kp N3        &kp N4         &kp N5          &mmv MOVE_DOWN   &kp N6        &kp N7     &kp N8            &kp N9        &kp N0        &kp BSLH
 &kp LSHFT      &kp ESC         &kp TAB       &kp BSPC      &kp RET        &kp LS(DQT)     &mmv MOVE_LEFT   &kp LEFT      &kp DOWN   &kp UP            &kp RIGHT     &kp SQT       &kp RSHFT
 &kp LS(CARET)  &kp LEFT_SHIFT  &kp LBKT      &kp LS(LBRC)  &kp LS(PRCNT)  &kp LS(STAR)    &mmv MOVE_RIGHT  &kp LS(PLUS)  &kp MINUS  &kp EQUAL         &kp LS(LPAR)  &kp FSLH      &kp LS(PRCNT)
-&kp C_MUTE     &kp RBKT        &kp LS(RBRC)  &kp LGUI      &trans         &to 0           &mkp LCLK        &kp GRAVE     &kp SPACE  &sk LEFT_COMMAND  &trans        &kp LS(RPAR)
+&kp C_MUTE     &kp RBKT        &kp LS(RBRC)  &kp LGUI      &trans         &to 0           &mkp LCLK        &kp GRAVE     &kp SPACE  &sk LEFT_COMMAND  &kp DOLLAR    &kp LS(RPAR)
             >;
 
             display-name = "layer1";
