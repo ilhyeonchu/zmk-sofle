@@ -58,7 +58,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: layer1}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '2'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: osandbt}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: layer1, h: toggle}
   - $$mdi:keyboard-space$$
@@ -123,14 +123,14 @@ layers:
   - Sft+}
   - LGUI
   - {type: held}
-  - {t: LAYER0, h: toggle}
+  - {t: macmain, h: toggle}
   - $$mdi:mouse-left-click-outline$$
   - {t: '`', s: '~'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - $
   - Sft+)
-  '2':
+  osandbt:
   - '~'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -253,9 +253,9 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - {t: '$$mdi:apple-keyboard-shift$$', h: layer1}
-  - {t: '$$mdi:apple-keyboard-command$$', h: '2'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: osandbt}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
+  - {t: layer1, h: toggle}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-caps$$
   - PgDn
