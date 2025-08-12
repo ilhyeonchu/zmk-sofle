@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: F17, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -52,15 +52,15 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: F18, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: layer1}
   - {t: '$$mdi:apple-keyboard-control$$', h: osandbt}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: layer1, h: toggle}
+  - {t: '`', h: macmain, s: '~'}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-caps$$
   - PG DN
@@ -235,7 +235,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: F17, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -247,7 +247,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: F18, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -255,8 +255,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: layer1}
   - {t: '$$mdi:apple-keyboard-command$$', h: osandbt}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: layer1, h: toggle}
+  - {t: '`', h: LAYER0, s: '~'}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-caps$$
-  - PgDn
-  - PgUp
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-right-bold$$
