@@ -38,6 +38,24 @@
         tap-ms = <100>;
     };
 
+    HoldTapPress: HoldTapPress {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOLDTAPPRESS";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <300>;
+    };
+
+    HoldTaptokp: HoldTaptokp {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOLDTAPTOKP";
+        bindings = <&to>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <300>;
+    };
+
     behaviors {
     };
 
@@ -55,11 +73,11 @@
 
         windowmain {
             bindings = <
-&kp ESC     &kp N1     &kp N2    &kp N3            &kp N4            &kp N5                &kp UP_ARROW     &kp N6  &kp N7     &kp N8     &kp N9     &kp N0     &kp BSLH
-&kp TAB     &kp Q      &kp W     &kp E             &kp R             &kp T                 &kp DOWN_ARROW   &kp Y   &kp U      &kp I      &kp O      &kp P      &kp BSPC
-&kp RALT    &kp A      &kp S     &kp D             &kp F             &kp G                 &kp LEFT_ARROW   &kp H   &kp J      &kp K      &kp L      &kp SEMI   &kp RET
-&kp LSHFT   &kp Z      &kp X     &kp C             &kp V             &kp B                 &kp RIGHT_ARROW  &kp N   &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LALT  &kp LEFT_COMMAND  &lt 1 LEFT_SHIFT  &lt 2 LEFT_CONTROL    &kp ENTER        &to 1   &kp SPACE  &kp CAPS   &kp PG_DN  &kp PG_UP
+&kp ESC                  &kp N1     &kp N2            &kp N3        &kp N4            &kp N5                &kp UP_ARROW     &kp N6                &kp N7     &kp N8     &kp N9     &kp N0     &kp BSLH
+&kp TAB                  &kp Q      &kp W             &kp E         &kp R             &kp T                 &kp DOWN_ARROW   &kp Y                 &kp U      &kp I      &kp O      &kp P      &kp BSPC
+&kp RALT                 &kp A      &kp S             &kp D         &kp F             &kp G                 &kp LEFT_ARROW   &kp H                 &kp J      &kp K      &kp L      &kp SEMI   &kp RET
+&HoldTapPress LSHFT F17  &kp Z      &kp X             &kp C         &kp V             &kp B                 &kp RIGHT_ARROW  &kp N                 &kp M      &kp COMMA  &kp DOT    &kp FSLH   &HoldTapPress RIGHT_SHIFT F18
+&kp C_MUTE               &kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 1 LEFT_SHIFT  &lt 2 LEFT_CONTROL    &kp ENTER        &HoldTaptokp 3 GRAVE  &kp SPACE  &kp CAPS   &kp PG_DN  &kp PG_UP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -93,11 +111,11 @@
 
         macmain {
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3    &kp N4            &kp N5                &trans  &kp N6  &kp N7     &kp N8        &kp N9         &kp N0       &kp BSLH
-&kp TAB    &kp Q      &kp W     &kp E     &kp R             &kp T                 &trans  &kp Y   &kp U      &kp I         &kp O          &kp P        &kp BACKSPACE
-&kp CAPS   &kp A      &kp S     &kp D     &kp F             &kp G                 &trans  &kp H   &kp J      &kp K         &kp L          &kp SEMI     &kp RET
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V             &kp B                 &trans  &kp N   &kp M      &kp COMMA     &kp DOT        &kp FSLH     &kp RSHFT
-&trans     &kp LCTRL  &kp LALT  &kp LGUI  &lt 4 LEFT_SHIFT  &lt 2 LEFT_COMMAND    &trans  &to 4   &kp SPACE  &kp CAPSLOCK  &kp PAGE_DOWN  &kp PAGE_UP
+&kp ESC                  &kp N1     &kp N2    &kp N3    &kp N4            &kp N5                &trans  &kp N6                &kp N7     &kp N8        &kp N9          &kp N0           &kp BSLH
+&kp TAB                  &kp Q      &kp W     &kp E     &kp R             &kp T                 &trans  &kp Y                 &kp U      &kp I         &kp O           &kp P            &kp BACKSPACE
+&kp CAPS                 &kp A      &kp S     &kp D     &kp F             &kp G                 &trans  &kp H                 &kp J      &kp K         &kp L           &kp SEMI         &kp RET
+&HoldTapPress LSHFT F17  &kp Z      &kp X     &kp C     &kp V             &kp B                 &trans  &kp N                 &kp M      &kp COMMA     &kp DOT         &kp FSLH         &HoldTapPress RSHFT F18
+&trans                   &kp LCTRL  &kp LALT  &kp LGUI  &lt 4 LEFT_SHIFT  &lt 2 LEFT_COMMAND    &trans  &HoldTaptokp 0 GRAVE  &kp SPACE  &kp CAPSLOCK  &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
         };
 
