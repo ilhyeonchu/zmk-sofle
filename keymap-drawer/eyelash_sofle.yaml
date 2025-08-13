@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '&f18l F17', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&coc F17', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '&f18r F18', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&coc', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
@@ -235,7 +235,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '&f18l F17', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&coc F17', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -247,7 +247,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '&f18r F18', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '&coc', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
