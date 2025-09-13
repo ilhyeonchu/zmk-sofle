@@ -28,7 +28,7 @@
 &lt {
     bindings = <&mo>, <&sk>;
 
-    tapping-term-ms = <400>;
+    tapping-term-ms = <300>;
 };
 
 / {
@@ -46,7 +46,7 @@
         bindings = <&kp>, <&coc>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <400>;
+        tapping-term-ms = <300>;
     };
 
     HoldTaptokp: HoldTaptokp {
@@ -55,7 +55,7 @@
         bindings = <&to>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <400>;
+        tapping-term-ms = <300>;
     };
 
     behaviors {
