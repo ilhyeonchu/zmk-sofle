@@ -61,7 +61,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', h: osandbt}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '`', h: macmain, s: '~'}
-  - {t: '$$mdi:keyboard-space$$', h: osandbt}
+  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-caps$$
   - PG DN
   - PG UP
@@ -188,10 +188,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - $$mdi:apple-keyboard-shift$$
-  - {t: 'Gui+Ctl+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$', type: held}
+  - {t: 'Gui+Ctl+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - Ctl+Alt+LGUI
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: LAYER0, h: toggle}
+  - $$mdi:keyboard-space$$
   - LGUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -253,10 +253,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - {t: '$$mdi:apple-keyboard-shift$$', h: layer1}
-  - {t: '$$mdi:apple-keyboard-command$$', h: osandbt}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '5'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', h: LAYER0, s: '~'}
-  - {t: '$$mdi:keyboard-space$$', h: '5'}
+  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-caps$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
@@ -320,8 +320,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: 'Gui+Ctl+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - Ctl+Alt+LGUI
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: macmain, h: toggle}
+  - $$mdi:keyboard-space$$
   - LGUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
