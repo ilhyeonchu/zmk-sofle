@@ -256,7 +256,72 @@ layers:
   - {t: '$$mdi:apple-keyboard-command$$', h: osandbt}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', h: LAYER0, s: '~'}
-  - {t: '$$mdi:keyboard-space$$', h: osandbt}
+  - {t: '$$mdi:keyboard-space$$', h: '5'}
   - $$mdi:apple-keyboard-caps$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-right-bold$$
+  '5':
+  - BT CLR ALL
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - $$mdi:keyboard-esc$$
+  - Sft+!
+  - Sft+@
+  - Sft+#
+  - Sft+$
+  - Sft+%
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - Sft+^
+  - Sft+&
+  - Sft+*
+  - Sft+(
+  - Sft+)
+  - +
+  - $$mdi:keyboard-tab$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - LGUI
+  - $$mdi:apple-keyboard-control$$
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - Sft+{
+  - Sft+}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - Sft+<
+  - Sft+>
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '-', s: _}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - LGUI
+  - $$mdi:apple-keyboard-shift$$
+  - {t: 'Gui+Ctl+$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - Ctl+Alt+LGUI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - LGUI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
