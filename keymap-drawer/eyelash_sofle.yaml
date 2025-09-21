@@ -117,7 +117,7 @@ layers:
   - {t: '=', s: +}
   - Sft+(
   - {t: /, s: '?'}
-  - Sft+%
+  - Sft+4
   - $$mdi:volume-off$$
   - {t: ']', s: '}'}
   - Sft+}
@@ -128,7 +128,7 @@ layers:
   - {t: '`', s: '~'}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - $
+  - '&cmdtab'
   - Sft+)
   osandbt:
   - BT CLR ALL
