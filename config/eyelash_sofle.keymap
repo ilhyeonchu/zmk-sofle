@@ -28,7 +28,7 @@
 &lt {
     bindings = <&mo>, <&sk>;
 
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
 };
 
 / {
@@ -65,6 +65,15 @@
 
         #binding-cells = <2>;
         tapping-term-ms = <300>;
+    };
+
+    KpAndKp: KpAndKp {
+        compatible = "zmk,behavior-hold-tap";
+        label = "KPANDKP";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
     };
 
     behaviors {
@@ -105,11 +114,11 @@
 
         windowmain {
             bindings = <
-&kp ESC                &kp N1     &kp N2            &kp N3        &kp N4            &kp N5                     &kp UP_ARROW     &kp N6                &kp N7     &kp N8     &kp N9     &kp N0     &kp BSLH
-&kp TAB                &kp Q      &kp W             &kp E         &kp R             &kp T                      &kp DOWN_ARROW   &kp Y                 &kp U      &kp I      &kp O      &kp P      &kp LEFT_ALT
-&kp RALT               &kp A      &kp S             &kp D         &kp F             &kp G                      &kp LEFT_ARROW   &kp H                 &kp J      &kp K      &kp L      &kp SEMI   &kp LEFT_GUI
-&shiftorcoc LSHFT F17  &kp Z      &kp X             &kp C         &kp V             &kp B                      &kp RIGHT_ARROW  &kp N                 &kp M      &kp COMMA  &kp DOT    &kp FSLH   &shiftorcoc RSHFT 0
-&kp C_MUTE             &kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 1 LEFT_SHIFT  &ToAndSk 2 LEFT_CONTROL    &kp ENTER        &HoldTaptokp 3 GRAVE  &kp SPACE  &kp CAPS   &kp PG_DN  &kp PG_UP
+&kp ESC                &kp N1                 &kp N2            &kp N3               &kp N4               &kp N5                     &kp UP_ARROW     &kp N6                &kp N7               &kp N8               &kp N9            &kp N0                     &kp BSLH
+&kp TAB                &kp Q                  &kp W             &kp E                &kp R                &kp T                      &kp DOWN_ARROW   &kp Y                 &kp U                &kp I                &kp O             &kp P                      &kp LEFT_ALT
+&kp RALT               &KpAndKp LEFT_SHIFT A  &KpAndKp LCTRL S  &KpAndKp LEFT_ALT D  &KpAndKp LEFT_GUI F  &kp G                      &kp LEFT_ARROW   &kp H                 &KpAndKp LEFT_GUI J  &KpAndKp LEFT_ALT K  &KpAndKp LCTRL L  &KpAndKp LSHIFT SEMICOLON  &kp LEFT_GUI
+&shiftorcoc LSHFT F17  &kp Z                  &kp X             &kp C                &kp V                &kp B                      &kp RIGHT_ARROW  &kp N                 &kp M                &kp COMMA            &kp DOT           &kp FSLH                   &shiftorcoc RSHFT 0
+&kp C_MUTE             &kp LCTRL              &kp LEFT_COMMAND  &kp LEFT_ALT         &lt 1 LEFT_SHIFT     &ToAndSk 2 LEFT_CONTROL    &kp ENTER        &HoldTaptokp 3 GRAVE  &kp SPACE            &kp CAPS             &kp PG_DN         &kp PG_UP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -143,11 +152,11 @@
 
         macmain {
             bindings = <
-&kp ESC                &kp N1     &kp N2    &kp N3    &kp N4            &kp N5                     &trans  &kp N6                &kp N7     &kp N8        &kp N9          &kp N0           &kp BSLH
-&kp TAB                &kp Q      &kp W     &kp E     &kp R             &kp T                      &trans  &kp Y                 &kp U      &kp I         &kp O           &kp P            &kp LEFT_GUI
-&kp CAPS               &kp A      &kp S     &kp D     &kp F             &kp G                      &trans  &kp H                 &kp J      &kp K         &kp L           &kp SEMI         &kp LEFT_ALT
-&shiftorcoc LSHFT F17  &kp Z      &kp X     &kp C     &kp V             &kp B                      &trans  &kp N                 &kp M      &kp COMMA     &kp DOT         &kp FSLH         &shiftorcoc RSHFT 0
-&trans                 &kp LCTRL  &kp LALT  &kp LGUI  &lt 4 LEFT_SHIFT  &ToAndSk 5 LEFT_COMMAND    &trans  &HoldTaptokp 0 GRAVE  &kp SPACE  &kp CAPSLOCK  &kp LEFT_ARROW  &kp RIGHT_ARROW
+&kp ESC                &kp N1            &kp N2    &kp N3    &kp N4            &kp N5                     &trans  &kp N6                &kp N7     &kp N8        &kp N9          &kp N0           &kp BSLH
+&kp TAB                &kp Q             &kp W     &kp E     &kp R             &kp T                      &trans  &kp Y                 &kp U      &kp I         &kp O           &kp P            &kp LEFT_GUI
+&kp CAPS               &KpAndKp LSHFT A  &kp S     &kp D     &kp F             &kp G                      &trans  &kp H                 &kp J      &kp K         &kp L           &kp SEMI         &kp LEFT_ALT
+&shiftorcoc LSHFT F17  &kp Z             &kp X     &kp C     &kp V             &kp B                      &trans  &kp N                 &kp M      &kp COMMA     &kp DOT         &kp FSLH         &shiftorcoc RSHFT 0
+&trans                 &kp LCTRL         &kp LALT  &kp LGUI  &lt 4 LEFT_SHIFT  &ToAndSk 5 LEFT_COMMAND    &trans  &HoldTaptokp 0 GRAVE  &kp SPACE  &kp CAPSLOCK  &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
         };
 
